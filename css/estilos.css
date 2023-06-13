@@ -1,0 +1,255 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.logomagic{
+    text-align: center;
+
+}
+
+.footerend-inicio{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+}
+
+.footer-inicio img{
+    height: 60px;
+}
+
+.list-group{
+    width: 150px;
+}
+
+.navbar-total-pro{
+margin-bottom: 10px;
+}
+.navbar-total li a:hover{
+    background: #fdc2c2;
+    color: black;
+}
+.navbar-total-pro li a:hover{
+    background: #fdc2c2;
+    color: black;
+}
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: circle;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e8e8e8;
+}
+nav{
+    text-align: center;
+}
+
+.tituloinicio{
+    grid-area: titulo;
+}
+
+.contenedor-contacto{
+    width: 100%;
+    max-width: 100%;
+    margin:auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 50px;
+    margin-top: 50px;
+}
+
+.contenedor-contacto h2{
+    margin-bottom: 15px;
+    font-size: 35px;
+}
+
+.contenedor-contacto p1{
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.contenedor-contacto .campo, textarea{
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 15px;
+    border: 2px solid #fdc2c2;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    outline: 0px;
+}
+
+.contenedor-contacto .bton-enviar{
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background-color: #fdc2c2;
+    color: black;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.ubicacion{
+    display: flex;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+.ubicacion ul{
+    padding-top: 20px;
+}
+.ubicacion ul li{
+    padding-top: 7px;
+}
+.contenedor-mapa-right{
+    padding-left: 20px;
+}
+.contenedor-mapa{
+    display: inline-flex;
+}
+.tituloinicio{
+    text-align: center;
+    margin-top: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.item-card-container{
+    display: flex;
+    padding: 5px;
+}
+
+
+.item-card{
+    flex: 25%;
+    padding: 5px;
+    text-align: center;
+}
+
+.item-card{
+    display: inline-block;
+    margin: 10px;
+}
+
+.item-card-container-promo{
+    display: flex;
+    text-align: center;
+}
+.item-card-promo{
+    flex: auto;
+    margin-left: 100px;
+    padding: 5px;
+}
+
+    .item-card-container-produ{
+        display: flex;
+        text-align: center;
+    }
+
+.item-card-produ{
+    flex: auto;
+    margin-left: 100px;
+    padding: 5px;
+
+}
+
+
+.productosinicio{
+    margin-left: 50px;
+}
+.categoriasli{
+    margin-left: 30px;
+    margin-top: 100px;
+}
+.nutricionescat{
+    font-weight: bold;
+}
+
+.shampocat{
+    font-weight: bold;
+}
+.wsp{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    border-radius: 10%;
+    z-index: 9999;
+}
+.wsp img{
+    height: 70px;
+    width: 70px;
+}
+
+.carouselInicio{
+    width: 40px;
+}
+.Carouselinicio{
+    width: 30px;
+}
+
+/*medida celular 320px - 420px - 480 px */
+@media (max-width: 500px) {
+    .logomagic img {
+        width: 250px;
+    }
+    .logomagic h2 {
+        font-size: 20px;
+    }
+    .carousel-inner img {
+        width: 100%;
+        height: auto;
+    }
+    .footer-inicio{
+        display: flex;
+        justify-content:right;
+    }
+
+    .item-card-container-promo {
+        flex-direction: column;
+    }
+
+    .item-card-container-produ {
+        flex-direction: column;
+        justify-content: center;
+    }
+.div2{
+    text-align: center;
+}
+.formulario-contenido{
+    width: 500px;
+}
+.ubicacion{
+    width: 470px;
+    height: 470px;
+
+}
+.contenedor-mapa{
+    display: flex;
+    flex-direction: column;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
