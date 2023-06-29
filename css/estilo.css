@@ -3,12 +3,22 @@
   margin: 0;
 }
 
-.logomagic {
-  text-align: center;
+.bodytotal {
+  background: linear-gradient(purple, #FFC0CB);
 }
 
-.bodytotal{
-  background: linear-gradient(purple , #FFC0CB);
+/**Transform**/
+.anima-promo-produ {
+  width: 300px;
+  transition: width 1s;
+}
+
+.anima-promo-produ:hover {
+  width: 350px;
+}
+
+.logomagic {
+  text-align: center;
 }
 
 .footerend-inicio {
@@ -45,15 +55,8 @@ ul {
   list-style-type: circle;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #e8e8e8;
-}
-
-.animate__animated.animate__fadeInRight{
-  text-align: center;
-  margin-top: 30px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+.tituloinicio {
+  grid-area: titulo;
 }
 
 .contenedor-contacto {
@@ -106,6 +109,12 @@ body {
   display: inline-flex;
 }
 
+.tituloinicio {
+  text-align: center;
+  margin-top: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
 .item-card-container {
   display: flex;
   padding: 5px;
@@ -151,6 +160,12 @@ body {
   width: 40px;
 }
 
+.animate__animated.animate__fadeInRight {
+  text-align: center;
+  margin-top: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
 /** declarar mapa **/
 .bton-enviar -colormagic, .bton-cancelar -colormagic {
   background-color: #fdc2c2;
@@ -164,7 +179,7 @@ body {
 .bton-enviar, .bton-cancelar {
   padding: 15px;
   font-size: 16px;
-  border: solid 2px;
+  border: solid 1px;
   border-color: black;
   outline: 0px;
   color: black;
@@ -186,15 +201,6 @@ body {
 .item-card-container-promo {
   display: flex;
   text-align: center;
-}
-
-/**Transform**/
-.anima-promo-produ{
-  width: 300px;
-  transition: width 1s;
-}
-.anima-promo-produ:hover{
-  width: 350px;
 }
 
 @media (max-width: 500px) {
@@ -234,7 +240,6 @@ body {
     flex-direction: column;
   }
 }
-
 @media (max-width: 768px) {
   .item-card-container-promo {
     flex-direction: column;
@@ -257,6 +262,6 @@ body {
   .logomagic h2 {
     font-size: 20px;
   }
-
 }
+
 /*# sourceMappingURL=estilo.css.map */
