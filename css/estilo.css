@@ -197,11 +197,6 @@ body {
   width: 350px;
 }
 
-
-
-
-
-
 @media (max-width: 500px) {
   .logomagic img {
     width: 250px;
@@ -240,4 +235,28 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .item-card-container-promo {
+    flex-direction: column;
+  }
+  .item-card-container-produ {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .ubicacion {
+    width: 100%;
+    height: 470px;
+  }
+  .contenedor-mapa {
+    display: flex;
+    flex-direction: column;
+  }
+  .logomagic img {
+    width: 250px;
+  }
+  .logomagic h2 {
+    font-size: 20px;
+  }
+
+}
 /*# sourceMappingURL=estilo.css.map */
