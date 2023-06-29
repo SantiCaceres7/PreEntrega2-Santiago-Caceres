@@ -25,7 +25,6 @@
 }
 
 .navbar-total li a:hover {
-  background: #fdc2c2;
   color: black;
 }
 
@@ -74,21 +73,11 @@ body {
   width: 100%;
   padding: 15px 10px;
   font-size: 15px;
-  border: 2px solid #fdc2c2;
   margin-bottom: 20px;
   border-radius: 3px;
   outline: 0px;
-}
-.contenedor-contacto .bton-enviar {
-  padding: 15px;
-  font-size: 16px;
-  border: none;
-  outline: 0px;
-  background: #fdc2c2;
-  color: black;
-  border-radius: 3px;
-  cursor: pointer;
-  transition: all 300ms ease;
+  border: solid 3px;
+  border-color: #fdc2c2;
 }
 
 .ubicacion {
@@ -130,21 +119,13 @@ body {
   margin: 10px;
 }
 
-.item-card-container-promo {
-  display: flex;
-  text-align: center;
-}
-.item-card-container-promo .item-card-promo {
+.item-card-promo {
   flex: auto;
   margin-left: 35px;
   padding: 5px;
 }
 
-.item-card-container-produ {
-  display: flex;
-  text-align: center;
-}
-.item-card-container-produ .item-card-produ {
+.item-card-produ {
   flex: auto;
   margin-left: 35px;
   padding: 5px;
@@ -168,6 +149,43 @@ body {
 
 .carouselInicio {
   width: 40px;
+}
+
+/** declarar mapa **/
+.bton-enviar -colormagic, .bton-cancelar -colormagic {
+  background-color: #fdc2c2;
+}
+
+.navbar-total li a:hover -colormagic {
+  background-color: #fdc2c2;
+}
+
+/**Extend**/
+.bton-enviar, .bton-cancelar {
+  padding: 15px;
+  font-size: 16px;
+  border: solid 1px;
+  border-color: #fdc2c2;
+  outline: 0px;
+  color: black;
+  border-radius: 3px;
+  transition: all 300ms ease;
+  background-color: #fdc2c2;
+}
+
+.bton-cancelar {
+  background-color: aquamarine;
+}
+
+/**Mixin**/
+.item-card-container-produ {
+  display: flex;
+  text-align: center;
+}
+
+.item-card-container-promo {
+  display: flex;
+  text-align: center;
 }
 
 @media (max-width: 500px) {
