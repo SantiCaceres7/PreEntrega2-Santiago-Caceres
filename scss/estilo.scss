@@ -14,8 +14,8 @@
     text-align: center;
 
     img {
-    height: 60px;
-}
+        height: 60px;
+    }
 }
 
 .list-group {
@@ -60,7 +60,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 50px;
     margin-top: 50px;
-    
+
 
     h2 {
         margin-bottom: 15px;
@@ -128,17 +128,17 @@ body {
     margin: 10px;
 }
 
-    .item-card-promo {
-        flex: auto;
-        margin-left: 35px;
-        padding: 5px;
-    }
+.item-card-promo {
+    flex: auto;
+    margin-left: 35px;
+    padding: 5px;
+}
 
-    .item-card-produ {
-        flex: auto;
-        margin-left: 35px;
-        padding: 5px;
-    }
+.item-card-produ {
+    flex: auto;
+    margin-left: 35px;
+    padding: 5px;
+}
 
 .productosinicio {
     margin-left: 50;
@@ -156,19 +156,23 @@ body {
         width: 70px;
     }
 }
+
 .carouselInicio {
     width: 40px;
 }
 
 /** declarar mapa **/
-$formulario:(
+$formulario: (
     colormagic: #fdc2c2
 );
-@each $red, $color in $formulario{
-    .bton-enviar -#{$red}{
+
+@each $red,
+$color in $formulario {
+    .bton-enviar -#{$red} {
         background-color: $color;
     }
-    .navbar-total li a:hover -#{$red}{
+
+    .navbar-total li a:hover -#{$red} {
         background-color: $color;
     }
 
@@ -186,21 +190,24 @@ $formulario:(
     transition: all 300ms ease;
     background-color: #fdc2c2
 }
+
 .bton-cancelar {
     @extend .bton-enviar;
-    background-color: aquamarine ;
-    
+    background-color: aquamarine;
+
 }
 
 /**Mixin**/
-@mixin flex{
+@mixin flex {
     display: flex;
     text-align: center;
 }
-.item-card-container-produ{
+
+.item-card-container-produ {
     @include flex;
 }
-.item-card-container-promo{
+
+.item-card-container-promo {
     @include flex;
 }
 
@@ -249,4 +256,34 @@ $formulario:(
         display: flex;
         flex-direction: column;
     }
+}
+
+@media (max-width: 768px) {
+    .item-card-container-promo {
+        flex-direction: column;
+    }
+
+    .item-card-container-produ {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .ubicacion {
+        width: 100%;
+        height: 470px;
+    }
+
+    .contenedor-mapa {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logomagic img {
+        width: 250px;
+    }
+
+    .logomagic h2 {
+        font-size: 20px;
+    }
+
 }
