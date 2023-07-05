@@ -26,12 +26,20 @@
   grid-template-columns: repeat(2, 1fr);
   text-align: center;
 }
+.footerend-inicio p {
+  font-weight: bold;
+  font-size: 30px;
+}
+.footerend-inicio p1 {
+  font-weight: bold;
+}
 .footerend-inicio img {
   height: 60px;
 }
 
 .list-group {
   width: 150px;
+  padding: 5px;
 }
 
 .navbar-total-pro {
@@ -67,15 +75,20 @@ ul {
   grid-template-columns: repeat(2, 1fr);
   grid-row-gap: 50px;
   margin-top: 50px;
+  padding-left: 3px;
+  padding-bottom: 5px;
+  text-align: start;
 }
-.contenedor-contacto h2 {
+.contenedor-contacto h1 {
   margin-bottom: 15px;
   font-size: 35px;
+  font-weight: bold;
 }
 .contenedor-contacto p {
   font-size: 17px;
   line-height: 1.6;
   margin-bottom: 30px;
+  font-weight: bold;
 }
 .contenedor-contacto .campo,
 .contenedor-contacto textarea {
@@ -102,7 +115,15 @@ ul {
 }
 
 .contenedor-mapa-right {
-  padding-right: 20px;
+  padding-left: 10px;
+}
+.contenedor-mapa-right p {
+  font-size: 25px;
+  font-weight: bold;
+}
+.contenedor-mapa-right p1 {
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .contenedor-mapa {
@@ -130,8 +151,18 @@ ul {
 
 .item-card-promo {
   flex: auto;
-  margin-left: 35px;
+  margin-left: 25px;
   padding: 5px;
+}
+
+.animate__animated.animate__flip {
+  text-align: center;
+  font-size: 40px;
+}
+
+.animate__animated.animate__fadeIn {
+  text-align: center;
+  font-size: 45px;
 }
 
 .item-card-produ {
@@ -166,6 +197,25 @@ ul {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
+.animate__animated.animate__heartBeat {
+  width: 350px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.descripcionlong {
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+}
+
+.list-group-item.active {
+  background: #fdc2c2;
+  border-color: black;
+  color: black;
+  font-weight: bold;
+}
+
 /** declarar mapa **/
 .bton-enviar -colormagic, .bton-cancelar -colormagic {
   background-color: #fdc2c2;
@@ -197,10 +247,30 @@ ul {
   display: flex;
   text-align: center;
 }
+.item-card-container-produ p1 {
+  font-size: 25px;
+}
 
 .item-card-container-promo {
   display: flex;
   text-align: center;
+  text-align: center;
+}
+.item-card-container-promo p1 {
+  font-weight: bold;
+  font-size: 50px;
+}
+.item-card-container-promo p {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.footer-copyright {
+  background-color: white;
+  padding: 1px;
+  text-align: center;
+  margin: 0;
+  font-weight: bold;
 }
 
 @media (max-width: 500px) {
@@ -223,7 +293,7 @@ ul {
   }
   .item-card-container-produ {
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
   }
   .div2 {
     text-align: center;
@@ -233,7 +303,8 @@ ul {
   }
   .ubicacion {
     width: 100%;
-    height: 470px;
+    height: 450px;
+    padding-right: 20px;
   }
   .contenedor-mapa {
     display: flex;
