@@ -277,6 +277,9 @@ ul {
   .logomagic img {
     width: 250px;
   }
+  .navbar.navbar-expand-lg.bg-body-tertiary {
+    width: 498px;
+  }
   .logomagic h2 {
     font-size: 20px;
   }
